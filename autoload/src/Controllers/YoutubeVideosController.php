@@ -1,10 +1,24 @@
 <?php
 
-namespace Obinna\Page;
+namespace Obinna\Controllers;
 
 class YoutubeVideosController {
-    function another()
+
+    public $searchterm;
+
+    public $number;
+
+
+    function __construct()
     {
-        echo "hello again,this text comes from another class in src/YoutubeVideosController/YoutubeVideosController.phpideosController.php";
+        echo "hitting the process the constructor method";
+
     }
+
+    function processRequest()
+    {
+        echo "hitting the process request method";
+
+    }
+
 }

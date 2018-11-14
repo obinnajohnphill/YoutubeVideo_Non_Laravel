@@ -1,0 +1,53 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "89fc720f658ab1e9192a72f2001960fb",
+    "packages": [
+        {
+            "name": "objective/autoload",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/obinnajohnphill/autoload.git",
+                "reference": "46018b78257558ab2734733b309817e86682cc02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/obinnajohnphill/autoload/zipball/46018b78257558ab2734733b309817e86682cc02",
+                "reference": "46018b78257558ab2734733b309817e86682cc02",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Obinna\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Obinna Johnphill",
+                    "email": "obinna.johnphill@enta.net"
+                }
+            ],
+            "description": "My second Composer project",
+            "time": "2018-11-14T16:31:44+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "objective/autoload": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

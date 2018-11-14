@@ -1,0 +1,37 @@
+[
+    {
+        "name": "objective/autoload",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/obinnajohnphill/autoload.git",
+            "reference": "46018b78257558ab2734733b309817e86682cc02"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/obinnajohnphill/autoload/zipball/46018b78257558ab2734733b309817e86682cc02",
+            "reference": "46018b78257558ab2734733b309817e86682cc02",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6.4"
+        },
+        "time": "2018-11-14T16:31:44+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Obinna\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "authors": [
+            {
+                "name": "Obinna Johnphill",
+                "email": "obinna.johnphill@enta.net"
+            }
+        ],
+        "description": "My second Composer project"
+    }
+]
