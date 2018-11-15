@@ -1,5 +1,4 @@
 
-
 <!doctype html>
 <html>
 <head>
@@ -98,26 +97,27 @@
 
 <?php
 
-$params = $_GET;
+session_start();
+if(isset($_SESSION['videos']) && isset($_GET['number'])) {
+    for ($i = 0; $i < $_GET['number']; $i++) {
+        $videoId = $_SESSION['videos']['items'][$i]['id']['videoId'];
+        $title = $_SESSION['videos'] ['items'][$i]['snippet']['title'];
+        $description = $_SESSION['videos']['items'][$i]['snippet']['description'];
 
-for ($i = 0; $i < $params['number']; $i++) {
-    $videoId = $params['value']['items'][$i]['id']['videoId'];
-    $title = $params['value'] ['items'][$i]['snippet']['title'];
-    $description = $params['value']['items'][$i]['snippet']['description'];
+        ?>
 
-?>
-
-<div class="video-tile">
-    <div  class="videoDiv">
-        <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/<?php echo $videoId; ?>"
-                data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>
-    </div>
-    <div class="videoInfo">
-        <div class="videoTitle"><b><?php echo $title; ?></b></div>
-        <div class="videoDesc"><?php echo $description; ?></div>
-    </div>
-</div>
-<?php
+        <div class="video-tile">
+            <div class="videoDiv">
+                <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/<?php echo $videoId; ?>"
+                        data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>
+            </div>
+            <div class="videoInfo">
+                <div class="videoTitle"><b><?php echo $title; ?></b></div>
+                <div class="videoDesc"><?php echo $description; ?></div>
+            </div>
+        </div>
+        <?php
+    }
 }
 ?>
 
