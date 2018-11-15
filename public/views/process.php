@@ -21,7 +21,9 @@ if (isset($_POST["searchterm"]) AND isset($_POST["number"]) )
 
     if (empty($searchItem) OR empty($number))
     {
-        echo "Your've not added required search term";
+        echo "<h1>Error!!</h1>";
+        echo "<h3>Please enter a search term then try again</h3>";
+        echo "<h5><a href='home'>Go back</a></h5>";
         die();
     }
 }
