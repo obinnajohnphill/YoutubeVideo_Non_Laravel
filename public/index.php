@@ -17,6 +17,9 @@ switch ($pages) {
     case '/saved_videos':
         require 'views/saved_videos.php';
         break;
+    case '/process':
+        require 'views/process.php';
+        break;
     default:
         header('HTTP/1.0 404 Not Found');
         require 'views/404.php';

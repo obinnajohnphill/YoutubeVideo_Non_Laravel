@@ -1,5 +1,5 @@
 {
     "require": {
-        "objective/autoload": "dev-master"
+        "obinna/app": "dev-master"
     }
 }

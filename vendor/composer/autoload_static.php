@@ -16,7 +16,7 @@ class ComposerStaticInit3e2424229ef209f5307966a9ede824a6
     public static $prefixDirsPsr4 = array (
         'Obinna\\' => 
         array (
-            0 => __DIR__ . '/..' . '/objective/autoload/src',
+            0 => __DIR__ . '/..' . '/obinna/app/src',
         ),
     );
 

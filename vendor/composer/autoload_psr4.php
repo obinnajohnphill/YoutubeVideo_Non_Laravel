@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Obinna\\' => array($vendorDir . '/objective/autoload/src'),
+    'Obinna\\' => array($vendorDir . '/obinna/app/src'),
 );
