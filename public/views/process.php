@@ -15,7 +15,7 @@ use Obinna\Services\YoutubeVideosService;
 
 ## Process selected-to-save videos
 if (!empty($_POST["videoId"])){
-    $save = new YoutubeVideosService($_POST["videoId"],$_POST["title"],$_POST["desc"]);
+    $save = new YoutubeVideosService($_POST["videoId"],$_POST["title"]);
 }
 
 

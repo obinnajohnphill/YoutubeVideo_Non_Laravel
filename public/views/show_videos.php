@@ -60,7 +60,6 @@ if(isset($_SESSION['videos']) && isset($_GET['number'])) {
 
             <input type="checkbox" name="videoId" value="<?php echo $videoId; ?>"><br>
             <input type="hidden" name="title" value="<?php echo $title; ?>">
-            <input type="hidden" name="desc" value="<?php echo $description; ?>">
 
             <div class="videoInfo">
                 <div class="videoTitle"><b><?php echo $title; ?></b></div>

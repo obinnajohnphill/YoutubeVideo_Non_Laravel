@@ -11,6 +11,5 @@ include dirname(__FILE__).'/../../vendor/autoload.php';
 
 if (!empty ($_GET['msg'])){
     echo ($_GET['msg']);
-
 }
 
