@@ -3,10 +3,7 @@
 <html>
 <head>
     <title>YouTube Search</title>
-
-
     <style>
-
         body {
             font-family: Arial;
             width: 100%;
@@ -44,8 +41,9 @@
 
 </head>
 
+<body>
+<form action="/process" method="post">
 <?php
-
 session_start();
 if(isset($_SESSION['videos']) && isset($_GET['number'])) {
     for ($i = 0; $i < $_GET['number']; $i++) {
@@ -53,14 +51,17 @@ if(isset($_SESSION['videos']) && isset($_GET['number'])) {
             $videoId = $_SESSION['videos']['items'][$i]['id']['videoId'];
             $title = $_SESSION['videos'] ['items'][$i]['snippet']['title'];
             $description = $_SESSION['videos']['items'][$i]['snippet']['description'];
-
         ?>
-
         <div class="video-tile">
             <div class="videoDiv">
                 <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/<?php echo $videoId; ?>"
                         data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>
             </div>
+
+            <input type="checkbox" name="videoId" value="<?php echo $videoId; ?>"><br>
+            <input type="hidden" name="title" value="<?php echo $title; ?>">
+            <input type="hidden" name="desc" value="<?php echo $description; ?>">
+
             <div class="videoInfo">
                 <div class="videoTitle"><b><?php echo $title; ?></b></div>
                 <div class="videoDesc"><?php echo $description; ?></div>
@@ -71,8 +72,7 @@ if(isset($_SESSION['videos']) && isset($_GET['number'])) {
     }
 }
 ?>
-
-<body>
-
+<input type="submit" value="Submit">
+</form>
 </body>
 </html>

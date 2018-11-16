@@ -9,15 +9,8 @@
 
 include dirname(__FILE__).'/../../vendor/autoload.php';
 
-use Obinna\YoutubeVideosModel;
-use Obinna\Controllers\YoutubeVideosController;
+if (!empty ($_GET['msg'])){
+    echo ($_GET['msg']);
 
+}
 
-$user = new YoutubeVideosModel();
-$page = new YoutubeVideosController();
-
-$helloUser = $user->sayhello();
-$hellopage = $page->another();
-
-echo $helloUser;
-echo $hellopage;

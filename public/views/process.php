@@ -11,14 +11,15 @@ include dirname(__FILE__).'/../../vendor/autoload.php';
 
 use Obinna\Controllers\YoutubeVideosController;
 
-use Obinna\Repositories\YoutubeVideosRepository;
+use Obinna\Services\YoutubeVideosService;
 
-//$ca = new YoutubeVideosRepository();
-//$test = $ca->all();
-//var_dump($test);
+## Process selected-to-save videos
+if (!empty($_POST["videoId"])){
+    $save = new YoutubeVideosService($_POST["videoId"],$_POST["title"],$_POST["desc"]);
+}
 
-//die();
 
+## Process the search items videos
 if (isset($_POST["searchterm"]) AND isset($_POST["number"]) )
 {
     $searchItem =  htmlspecialchars($_POST["searchterm"]);
