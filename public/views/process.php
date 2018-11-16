@@ -17,15 +17,17 @@ if (isset($_POST["searchterm"]) AND isset($_POST["number"]) )
 
     $number = htmlspecialchars($_POST["number"]);
 
-    $passer = new YoutubeVideosController($searchItem, $number);
-
     if (empty($searchItem) OR empty($number))
     {
         echo "<h1>Error!!</h1>";
         echo "<h3>Please enter a search term then try again</h3>";
-        echo "<h5><a href='home'>Go back</a></h5>";
+        echo "<h5><a href='/'>Go back</a></h5>";
         die();
+    }else{
+        $passer = new YoutubeVideosController($searchItem, $number);
+
     }
+
 }
 
 
