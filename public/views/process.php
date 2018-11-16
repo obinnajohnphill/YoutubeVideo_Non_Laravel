@@ -11,6 +11,14 @@ include dirname(__FILE__).'/../../vendor/autoload.php';
 
 use Obinna\Controllers\YoutubeVideosController;
 
+use Obinna\Repositories\YoutubeVideosRepository;
+
+//$ca = new YoutubeVideosRepository();
+//$test = $ca->all();
+//var_dump($test);
+
+//die();
+
 if (isset($_POST["searchterm"]) AND isset($_POST["number"]) )
 {
     $searchItem =  htmlspecialchars($_POST["searchterm"]);

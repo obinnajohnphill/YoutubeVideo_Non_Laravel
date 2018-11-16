@@ -53,7 +53,7 @@ if(isset($_SESSION['videos']) && isset($_GET['number'])) {
             $videoId = $_SESSION['videos']['items'][$i]['id']['videoId'];
             $title = $_SESSION['videos'] ['items'][$i]['snippet']['title'];
             $description = $_SESSION['videos']['items'][$i]['snippet']['description'];
-        }
+
         ?>
 
         <div class="video-tile">
@@ -67,6 +67,7 @@ if(isset($_SESSION['videos']) && isset($_GET['number'])) {
             </div>
         </div>
         <?php
+        }
     }
 }
 ?>
