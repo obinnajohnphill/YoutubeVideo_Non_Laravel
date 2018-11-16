@@ -8,7 +8,7 @@ $pages = (parse_url($host_address, PHP_URL_PATH));
 
 ## Route it up!
 switch ($pages) {
-    case '/home':
+    case '/':
         require 'views/home.php';
         break;
     case '/show_videos':
