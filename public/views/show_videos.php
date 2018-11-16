@@ -49,10 +49,11 @@
 session_start();
 if(isset($_SESSION['videos']) && isset($_GET['number'])) {
     for ($i = 0; $i < $_GET['number']; $i++) {
-        $videoId = $_SESSION['videos']['items'][$i]['id']['videoId'];
-        $title = $_SESSION['videos'] ['items'][$i]['snippet']['title'];
-        $description = $_SESSION['videos']['items'][$i]['snippet']['description'];
-
+        if (!empty($_SESSION['videos']['items'][$i]['id']['videoId'])){
+            $videoId = $_SESSION['videos']['items'][$i]['id']['videoId'];
+            $title = $_SESSION['videos'] ['items'][$i]['snippet']['title'];
+            $description = $_SESSION['videos']['items'][$i]['snippet']['description'];
+        }
         ?>
 
         <div class="video-tile">
