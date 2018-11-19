@@ -1,5 +1,6 @@
 {
     "require": {
-        "obinna/app": "dev-master"
+        "obinna/app": "dev-master",
+        "php-amqplib/php-amqplib": "^2.8"
     }
 }
