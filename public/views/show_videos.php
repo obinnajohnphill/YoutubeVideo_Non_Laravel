@@ -58,8 +58,8 @@ if(isset($_SESSION['videos']) && isset($_GET['number'])) {
                         data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>
             </div>
 
-            <input type="checkbox" name="videoId" value="<?php echo $videoId; ?>"><br>
-            <input type="hidden" name="title" value="<?php echo $title; ?>">
+            <input type="checkbox" name="videoId[]" value="<?php echo $videoId; ?>"><br>
+            <input type="hidden" name="title[]" value="<?php echo $title; ?>">
 
             <div class="videoInfo">
                 <div class="videoTitle"><b><?php echo $title; ?></b></div>

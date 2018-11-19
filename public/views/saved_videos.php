@@ -57,25 +57,22 @@ if (!empty ($_GET['msg'])){
 $videos = new YoutubeVideosRepository();
 $showall = $videos->all();
 
-
 for ($i = 0; $i < count($showall['videoId']); $i++) {
-    $videoId = $showall['videoId'];
-    $title = $showall['title'];
+    $videoId = $showall['videoId'][$i];
+    $title = $showall['title'][$i];
 ?>
-
-    <div class="video-tile">
-        <div class="videoDiv">
-            <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/<?php echo $videoId; ?>"
-                    data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>
-        </div>
-        <div class="videoInfo">
-            <div class="videoTitle"><b><?php echo $title; ?></b></div>
-        </div>
+<div class="video-tile">
+    <div class="videoDiv">
+        <iframe id="iframe" style="width:100%;height:100%" src="//www.youtube.com/embed/<?php echo $videoId; ?>"
+                data-autoplay-src="//www.youtube.com/embed/<?php echo $videoId; ?>?autoplay=1"></iframe>
     </div>
+    <div class="videoInfo">
+        <div class="videoTitle"><b><?php echo $title; ?></b></div>
+    </div>
+</div>
 <?php
 }
 
 ?>
-
 </body>
 </html>
