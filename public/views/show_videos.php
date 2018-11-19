@@ -88,7 +88,7 @@ if(isset($_SESSION['videos']) && isset($_GET['number'])) {
     }
 }
 ?>
-<input type="submit" value="Submit">
+<input type="submit" class="btn btn-primary" value="Submit">
 </form>
 </body>
 </html>
