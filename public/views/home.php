@@ -28,13 +28,27 @@
             }
         })
     </script>
-
+<style>
+    .msg{color: red}
+    .other{color: black;text-align: center}
+</style>
 
 </head>
 
 <body>
 
-<div align = "center">
+<?php
+if (!empty($_GET['msg'])){
+    echo "<div class='msg'>".$_GET['msg'].": &nbsp;&nbsp;";
+    for ($i = 0; $i < count($_GET['title']); $i++) {
+        echo"<strong>". $_GET['title'][$i]."</strong><br>";
+        echo"</div>";
+    }
+}
+?>
+
+
+<div class = "other">
 <h2>Search YouTube Videos</h2>
 <form
 id="app"

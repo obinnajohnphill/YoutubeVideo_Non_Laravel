@@ -44,6 +44,7 @@
 <body>
 <form action="/process" method="post">
 <?php
+
 session_start();
 if(isset($_SESSION['videos']) && isset($_GET['number'])) {
     for ($i = 0; $i < $_GET['number']; $i++) {

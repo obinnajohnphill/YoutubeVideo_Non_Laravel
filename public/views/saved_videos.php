@@ -51,7 +51,7 @@ use Obinna\Repositories\YoutubeVideosRepository;
 
 if (!empty ($_GET['msg'])){
     $message = $_GET['msg'];
-    echo '<div style="color:darkred">'.$message.'</div>';
+    echo '<div style="color:#4a8b15">' .$message.'</div>';
 }
 
 $videos = new YoutubeVideosRepository();
