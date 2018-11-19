@@ -3,6 +3,7 @@
 <head>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <script>
         const app = new Vue({
@@ -37,6 +38,17 @@
 
 <body>
 
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Home Page</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="/saved_videos">All Saved Videos</a></li>
+        </ul>
+    </div>
+</nav>
+
 <?php
 if (!empty($_GET['msg'])){
     echo "<div class='msg'>".$_GET['msg'].": &nbsp;&nbsp;";
@@ -46,7 +58,6 @@ if (!empty($_GET['msg'])){
     }
 }
 ?>
-
 
 <div class = "other">
 <h2>Search YouTube Videos</h2>
