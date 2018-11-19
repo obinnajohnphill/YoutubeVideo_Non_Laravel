@@ -22,8 +22,8 @@ if (!empty($_POST["videoId"])){
 ## Process the search items videos
 if (isset($_POST["searchterm"]) AND isset($_POST["number"]) )
 {
-    $searchItem =  htmlspecialchars($_POST["searchterm"]);
 
+    $searchItem =  htmlspecialchars($_POST["searchterm"]);
     $number = htmlspecialchars($_POST["number"]);
 
     if (empty($searchItem) OR empty($number))

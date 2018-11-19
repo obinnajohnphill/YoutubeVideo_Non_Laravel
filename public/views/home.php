@@ -3,7 +3,7 @@
 <head>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <script>
         const app = new Vue({
@@ -30,6 +30,17 @@
         })
     </script>
 <style>
+
+    .form{
+        min-width: 0;
+        width: 50%;
+        display: inline;
+    }
+
+    input {
+        width: 30%;
+    }
+
     .msg{color: red}
     .other{color: black;text-align: center}
 </style>
@@ -50,6 +61,8 @@
 </nav>
 
 <?php
+
+
 if (!empty($_GET['msg'])){
     echo "<div class='msg'>".$_GET['msg'].": &nbsp;&nbsp;";
     for ($i = 0; $i < count($_GET['title']); $i++) {
@@ -62,14 +75,14 @@ if (!empty($_GET['msg'])){
 <div class = "other">
 <h2>Search YouTube Videos</h2>
 <form
-id="app"
 @submit="checkForm"
 action="/process"
 method="post"
+class ="form"
 >
 
 <p>
-    <label for="searchterm">Search Term</label>&ensp;
+    <label for="searchterm">Search Term</label><br>
     <input
         id="searchterm"
         v-model="searchterm"
@@ -148,6 +161,7 @@ method="post"
 <p>
     <input
         type="submit"
+        class="btn btn-primary"
         value="Submit"
     >
 </p>
