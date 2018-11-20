@@ -211,50 +211,6 @@
               <item name="obinna" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="YoutubeAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YoutubeAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="obinna" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YoutubeAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YoutubeAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="obinna" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YoutubeAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YoutubeAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="obinna" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="RabbitMQ" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YoutubeAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YoutubeAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="obinna" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Repositories" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YoutubeAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YoutubeAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="obinna" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Services" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -310,7 +266,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71815000" />
+    <option name="totallyTimeSpent" value="73312000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
@@ -528,7 +484,7 @@
         <state relative-caret-position="501">
           <caret line="40" column="27" lean-forward="true" selection-start-line="40" selection-start-column="27" selection-end-line="40" selection-end-column="27" />
           <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
+            <element signature="e#6#95#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -565,7 +521,7 @@
         <state relative-caret-position="324">
           <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
+            <element signature="e#6#95#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -575,8 +531,8 @@
         <state relative-caret-position="29">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
-            <element signature="e#231#278#0#PHP" expanded="true" />
+            <element signature="e#6#95#0#PHP" expanded="false" />
+            <element signature="e#231#278#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -594,7 +550,7 @@
         <state relative-caret-position="414">
           <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
+            <element signature="e#6#95#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -604,7 +560,7 @@
         <state relative-caret-position="267">
           <caret line="18" column="57" lean-forward="false" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
           <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
+            <element signature="e#6#95#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
