@@ -11,12 +11,12 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/obinnajohnphill/obinna_package.git",
+                "url": "https://github.com/obinnajohnphill/youtube_package.git",
                 "reference": "d1f1dae9073639b7cf973df3f07b89c87905cb2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/obinnajohnphill/obinna_package/zipball/d1f1dae9073639b7cf973df3f07b89c87905cb2d",
+                "url": "https://api.github.com/repos/obinnajohnphill/youtube_package/zipball/d1f1dae9073639b7cf973df3f07b89c87905cb2d",
                 "reference": "d1f1dae9073639b7cf973df3f07b89c87905cb2d",
                 "shasum": ""
             },

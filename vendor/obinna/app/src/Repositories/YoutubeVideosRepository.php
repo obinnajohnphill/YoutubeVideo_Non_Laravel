@@ -8,7 +8,8 @@
 
 namespace Obinna\Repositories;
 
-
+use PDO;
+use PDOException;
 use Obinna\YoutubeVideosModel;
 
 class YoutubeVideosRepository extends YoutubeVideosModel
@@ -18,22 +19,31 @@ class YoutubeVideosRepository extends YoutubeVideosModel
     public $duplicate;
 
     public function all(){
-        $query = "SELECT * FROM  videos";
-        $result = mysqli_query($this->connect(), $query);
 
-            while ($row = mysqli_fetch_assoc($result)) {
-                $videoId[] = $row['video_id'];
-                $title[] = $row['title'];
-                $this->data = array("videoId"=>$videoId,"title"=>$title);
-            }
-        $this->close(); ## Close mysqli connection
+        $statement  = $this->conn->prepare("SELECT * FROM  videos");
+        $statement ->execute();
+        while ( $row = $statement->fetch(PDO::FETCH_ASSOC))
+        {
+            $videoId[] = $row['video_id'];
+            $title[] = $row['title'];
+            $this->data = array("videoId"=>$videoId,"title"=>$title);
+        }
+        $this->close(); ## Close pdo-mysql connection
+
         return  $this->data;
     }
 
-    public function saveAll($video_id,$title){
+    public function saveAll($video_id,$title)
+    {
         $payload = array();
-        $query = "INSERT INTO videos (video_id, title)VALUES('$video_id','$title')";
-        mysqli_query($this->connect(),$query);
+        try {
+            $statement = $this->conn->prepare("INSERT INTO videos (video_id, title) VALUES ('$video_id','$title')");
+            $statement->execute();
+        }
+        catch(PDOException $e)
+        {
+            echo "Insert failed: " . $e->getMessage();
+        }
         $this->close(); ## Close mysqli connection
         session_start();
         $payload ['msg'] = "Your video has been saved";
