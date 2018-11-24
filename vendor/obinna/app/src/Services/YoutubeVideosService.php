@@ -12,6 +12,7 @@ namespace Obinna\Services;
 use Obinna\RabbitMQ\SendMessage;
 use Obinna\Repositories\YoutubeVideosRepository;
 
+
 class YoutubeVideosService extends YoutubeVideosRepository
 {
 

@@ -12,6 +12,7 @@ use PDO;
 use PDOException;
 use Obinna\YoutubeVideosModel;
 
+
 class YoutubeVideosRepository extends YoutubeVideosModel
 {
 
@@ -21,8 +22,16 @@ class YoutubeVideosRepository extends YoutubeVideosModel
 
     public function __construct()
     {
-        $this->conn = new PDO("mysql:host=$this->host ;dbname=$this->db", $this->user, $this->pass);
-        $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        parent::__construct();
+
+        try{
+            $this->conn = new PDO("mysql:host=$this->host ;dbname=$this->db", $this->user, $this->pass);
+            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            }
+            catch(PDOException $e)
+            {
+            echo "Database connection failed: " . $e->getMessage();
+        }
     }
 
     public function all(){

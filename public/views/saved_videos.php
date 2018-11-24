@@ -29,6 +29,7 @@
 include dirname(__FILE__).'/../../vendor/autoload.php';
 
 use Obinna\Repositories\YoutubeVideosRepository;
+use Obinna\YoutubeVideosModel;
 
 if (!empty ($_GET['msg'])){
     $message = $_GET['msg'];
