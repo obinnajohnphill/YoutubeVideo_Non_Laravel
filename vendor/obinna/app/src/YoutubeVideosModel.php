@@ -15,5 +15,5 @@ class YoutubeVideosModel {
     protected $user = "homestead";
     protected $pass = "secret";
     protected $db = "youtube_video";
-    protected$conn;
+    protected $conn;
 }
