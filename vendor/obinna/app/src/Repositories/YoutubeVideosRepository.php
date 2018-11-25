@@ -11,7 +11,7 @@ namespace Obinna\Repositories;
 use PDO;
 use PDOException;
 use Obinna\YoutubeVideosModel;
-
+use Memcached;
 
 class YoutubeVideosRepository extends YoutubeVideosModel
 {
@@ -19,6 +19,8 @@ class YoutubeVideosRepository extends YoutubeVideosModel
     public $data;
     public $duplicate;
     public $conn;
+    public $memcached;
+    public $memcached_key = "select";
 
     public function __construct()
     {
@@ -32,10 +34,26 @@ class YoutubeVideosRepository extends YoutubeVideosModel
             {
             echo "Database connection failed: " . $e->getMessage();
         }
+        $this->memcached = new Memcached();
+        $this->memcached ->addServer($this->memcached_server,$this->memcached_server_port );
+
     }
+
 
     public function all(){
         try{
+
+            ## Get result from memcached if data exists in cache
+            $data = file_get_contents("cache.txt");
+            $file = unserialize( $data );
+            $cached = $this->memcached->get("select");
+            if ($this->memcached->getResultCode() !== Memcached::RES_NOTFOUND) {
+                if ($file == $cached){
+                    echo "Cached Data:  ";
+                    return  $cached;
+                }
+            }
+            ## Run query to get data if no longer in cache
             $statement  = $this->conn->prepare("SELECT * FROM  videos");
             $statement ->execute();
             while ( $row = $statement->fetch(PDO::FETCH_ASSOC))
@@ -44,13 +62,20 @@ class YoutubeVideosRepository extends YoutubeVideosModel
                 $title[] = $row['title'];
                 $this->data = array("videoId"=>$videoId,"title"=>$title);
             }
+            if ($file != $cached){
+               // $this->memcached->flush();
+                $this->memcached->set("select", $this->data, 30); ## Sets data into cache
+            }
+            file_put_contents("cache.txt",serialize($this->data));
             return  $this->data;
+
         }
         catch(PDOException $e)
         {
-        echo "Select all failed: " . $e->getMessage();
+            echo "Select all failed: " . $e->getMessage();
         }
     }
+
 
     public function saveAll($video_id,$title)
     {
