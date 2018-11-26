@@ -41,3 +41,11 @@ created_date TIMESTAMP
 8. The first time you view all saved videos, the system returns record from database and saves it into the cache
 
 9. If same record is querried within 1 hr, the cached version is returned and cache expires after one hour 
+
+**View Data Stored in Cache**
+
+2. ssh into your server 
+
+1. Run: telnet localhost 11211 
+
+3. Run: get select (to view data stored in cache with "select key")
