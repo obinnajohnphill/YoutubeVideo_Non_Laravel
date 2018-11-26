@@ -63,7 +63,6 @@ class YoutubeVideosRepository extends YoutubeVideosModel
                 $this->data = array("videoId"=>$videoId,"title"=>$title);
             }
             if ($file != $cached){
-               // $this->memcached->flush();
                 $this->memcached->set("select", $this->data, 60*60); ## Sets data into cache
             }
             file_put_contents("cache.txt",serialize($this->data));
@@ -84,6 +83,7 @@ class YoutubeVideosRepository extends YoutubeVideosModel
             $statement = $this->conn->prepare("INSERT INTO videos (video_id, title) VALUES ('$video_id','$title')");
             $statement->execute();
             $statement = null;
+            $this->memcached->flush();
         }
         catch(PDOException $e)
         {
@@ -124,6 +124,8 @@ class YoutubeVideosRepository extends YoutubeVideosModel
         try{
             $statement = $this->conn->prepare("DELETE FROM videos WHERE video_id = '$video_id'");
             $statement->execute();
+            $statement = null;
+            $this->memcached->flush();
         }
         catch(PDOException $e)
         {
