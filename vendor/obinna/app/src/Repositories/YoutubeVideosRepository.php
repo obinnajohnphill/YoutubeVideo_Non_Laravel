@@ -64,7 +64,7 @@ class YoutubeVideosRepository extends YoutubeVideosModel
             }
             if ($file != $cached){
                // $this->memcached->flush();
-                $this->memcached->set("select", $this->data, 30); ## Sets data into cache
+                $this->memcached->set("select", $this->data, 60*60); ## Sets data into cache
             }
             file_put_contents("cache.txt",serialize($this->data));
             return  $this->data;

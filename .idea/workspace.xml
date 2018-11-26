@@ -30,29 +30,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="YoutubeVideosRepository.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YoutubeVideosRepository.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/Repositories/YoutubeVideosRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+            <state relative-caret-position="306">
+              <caret line="66" column="66" lean-forward="false" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
               <folding>
                 <element signature="e#6#95#0#PHP" expanded="true" />
                 <element signature="e#129#137#0#PHP" expanded="true" />
-                <marker date="1543225488639" expanded="true" signature="1537:1558" ph="SELECT * FRO... videos" />
-                <marker date="1543225488639" expanded="true" signature="2407:2473" ph="INSERT INTO videos... " />
-                <marker date="1543225488639" expanded="true" signature="2972:3022" ph="SELECT * FRO... videos" />
-                <marker date="1543225488639" expanded="true" signature="3798:3845" ph="DELETE FROM " />
+                <marker date="1543225738879" expanded="true" signature="1537:1558" ph="SELECT * FRO... videos" />
+                <marker date="1543225738879" expanded="true" signature="2410:2476" ph="INSERT INTO videos... " />
+                <marker date="1543225738879" expanded="true" signature="2975:3025" ph="SELECT * FRO... videos" />
+                <marker date="1543225738879" expanded="true" signature="3801:3848" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="531">
+                <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+                <folding />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -168,8 +181,8 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/public/views/saved_videos.php" />
         <option value="$PROJECT_DIR$/public/cache.txt" />
-        <option value="$PROJECT_DIR$/vendor/obinna/app/src/Repositories/YoutubeVideosRepository.php" />
         <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/vendor/obinna/app/src/Repositories/YoutubeVideosRepository.php" />
       </list>
     </option>
   </component>
@@ -263,18 +276,18 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/vendor/obinna/app/src/Repositories" />
+      <recent name="$PROJECT_DIR$/public/views" />
+      <recent name="$PROJECT_DIR$/obinna" />
+      <recent name="$PROJECT_DIR$/vendor/objective/autoload" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/autoload" />
       <recent name="$PROJECT_DIR$/public/views" />
       <recent name="$PROJECT_DIR$/public" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/vendor/obinna/app/src/Repositories" />
-      <recent name="$PROJECT_DIR$/public/views" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/obinna" />
-      <recent name="$PROJECT_DIR$/vendor/objective/autoload" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -304,12 +317,12 @@
       <workItem from="1542365932870" duration="15846000" />
       <workItem from="1543012543405" duration="14076000" />
       <workItem from="1543090145527" duration="20211000" />
-      <workItem from="1543225534000" duration="87000" />
+      <workItem from="1543225534000" duration="212000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116276000" />
+    <option name="totallyTimeSpent" value="116401000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="86" y="419" width="1922" height="1092" extended-state="6" />
@@ -529,16 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="648">
-            <caret line="36" column="93" lean-forward="false" selection-start-line="36" selection-start-column="93" selection-end-line="36" selection-end-column="93" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/YoutubeVideosModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -581,26 +584,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/Repositories/YoutubeVideosRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="52" column="36" lean-forward="false" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
-          <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
-            <element signature="e#129#137#0#PHP" expanded="true" />
-            <marker date="1543225488639" expanded="true" signature="1537:1558" ph="SELECT * FRO... videos" />
-            <marker date="1543225488639" expanded="true" signature="2407:2473" ph="INSERT INTO videos... " />
-            <marker date="1543225488639" expanded="true" signature="2972:3022" ph="SELECT * FRO... videos" />
-            <marker date="1543225488639" expanded="true" signature="3798:3845" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="531">
+            <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/Repositories/YoutubeVideosRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="66" column="66" lean-forward="false" selection-start-line="66" selection-start-column="66" selection-end-line="66" selection-end-column="66" />
+          <folding>
+            <element signature="e#6#95#0#PHP" expanded="true" />
+            <element signature="e#129#137#0#PHP" expanded="true" />
+            <marker date="1543225738879" expanded="true" signature="1537:1558" ph="SELECT * FRO... videos" />
+            <marker date="1543225738879" expanded="true" signature="2410:2476" ph="INSERT INTO videos... " />
+            <marker date="1543225738879" expanded="true" signature="2975:3025" ph="SELECT * FRO... videos" />
+            <marker date="1543225738879" expanded="true" signature="3801:3848" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
