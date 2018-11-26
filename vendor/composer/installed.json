@@ -1,40 +1,5 @@
 [
     {
-        "name": "obinna/app",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/obinnajohnphill/youtube_package.git",
-            "reference": "d1f1dae9073639b7cf973df3f07b89c87905cb2d"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/obinnajohnphill/youtube_package/zipball/d1f1dae9073639b7cf973df3f07b89c87905cb2d",
-            "reference": "d1f1dae9073639b7cf973df3f07b89c87905cb2d",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=7.1"
-        },
-        "time": "2018-11-15T11:09:47+00:00",
-        "type": "library",
-        "installation-source": "source",
-        "autoload": {
-            "psr-4": {
-                "Obinna\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "authors": [
-            {
-                "name": "Obinna Johnphill",
-                "email": "obinna.johnphill@enta.net"
-            }
-        ],
-        "description": "Obinna Composer App Framework Project"
-    },
-    {
         "name": "php-amqplib/php-amqplib",
         "version": "v2.8.1",
         "version_normalized": "2.8.1.0",

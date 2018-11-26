@@ -11,10 +11,6 @@ class ComposerStaticInit3e2424229ef209f5307966a9ede824a6
         array (
             'PhpAmqpLib\\' => 11,
         ),
-        'O' => 
-        array (
-            'Obinna\\' => 7,
-        ),
         'D' => 
         array (
             'Dotenv\\' => 7,
@@ -25,10 +21,6 @@ class ComposerStaticInit3e2424229ef209f5307966a9ede824a6
         'PhpAmqpLib\\' => 
         array (
             0 => __DIR__ . '/..' . '/php-amqplib/php-amqplib/PhpAmqpLib',
-        ),
-        'Obinna\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/obinna/app/src',
         ),
         'Dotenv\\' => 
         array (

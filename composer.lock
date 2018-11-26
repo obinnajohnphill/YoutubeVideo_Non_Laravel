@@ -1,44 +1,11 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "97653ba588c741eacf67efb06e3c02e4",
+    "content-hash": "60ff72f28412ae68652ca274718c17d1",
     "packages": [
-        {
-            "name": "obinna/app",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/obinnajohnphill/youtube_package.git",
-                "reference": "d1f1dae9073639b7cf973df3f07b89c87905cb2d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/obinnajohnphill/youtube_package/zipball/d1f1dae9073639b7cf973df3f07b89c87905cb2d",
-                "reference": "d1f1dae9073639b7cf973df3f07b89c87905cb2d",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Obinna\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Obinna Johnphill",
-                    "email": "obinna.johnphill@enta.net"
-                }
-            ],
-            "description": "Obinna Composer App Framework Project",
-            "time": "2018-11-15T11:09:47+00:00"
-        },
         {
             "name": "php-amqplib/php-amqplib",
             "version": "v2.8.1",
