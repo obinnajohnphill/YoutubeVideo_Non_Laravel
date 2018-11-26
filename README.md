@@ -8,6 +8,8 @@
 
 4. Install RabbitMQ Server and set user
 
+5. Install php memchached
+
 
 
 **Create a table**
@@ -35,3 +37,7 @@ created_date TIMESTAMP
 6. Run receiver_1 (1 to 4) on multiple terminals
 
 7. You should see a queued video saved message when videos are save (a basic demo of rabbitMQ)
+
+8. The first time you view all saved videos, the system returns record from database and saves it into the cache
+
+9. If same record is querried within 1 hr, the cached version is returned and cache expires after one hour 
