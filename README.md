@@ -6,7 +6,7 @@
 
 3. Add database credentials and rabbitMQ server login details to .env
 
-4. Install RabbitMQ Server and set user
+4. Install RabbitMQ Server and set user https://www.rabbitmq.com/download.html
 
 5. Install php memchached
 
