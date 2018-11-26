@@ -4,8 +4,41 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "60ff72f28412ae68652ca274718c17d1",
+    "content-hash": "f7cbedfb8f76ce59f29484429250f981",
     "packages": [
+        {
+            "name": "obinna/app",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/obinnajohnphill/youtube_package.git",
+                "reference": "fc9f83e73041ed2d3a5793dbc7e3140d285d419e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/obinnajohnphill/youtube_package/zipball/fc9f83e73041ed2d3a5793dbc7e3140d285d419e",
+                "reference": "fc9f83e73041ed2d3a5793dbc7e3140d285d419e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Obinna\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Obinna Johnphill",
+                    "email": "obinna.johnphill@enta.net"
+                }
+            ],
+            "description": "Obinna Composer App Framework Project",
+            "time": "2018-11-26T13:08:05+00:00"
+        },
         {
             "name": "php-amqplib/php-amqplib",
             "version": "v2.8.1",

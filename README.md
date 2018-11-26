@@ -42,6 +42,7 @@ created_date TIMESTAMP
 
 9. If same record is querried within 1 hr, the cached version is returned and cache expires after one hour 
 
+
 **View Data Stored in Cache**
 
 2. ssh into your server 

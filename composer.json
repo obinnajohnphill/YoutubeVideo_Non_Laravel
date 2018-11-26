@@ -3,5 +3,7 @@
         "obinna/app": "dev-master",
         "php-amqplib/php-amqplib": "^2.8",
         "vlucas/phpdotenv": "^2.5"
+    },
+    "require-dev": {
     }
 }

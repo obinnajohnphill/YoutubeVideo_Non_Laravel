@@ -7,5 +7,6 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'PhpAmqpLib\\' => array($vendorDir . '/php-amqplib/php-amqplib/PhpAmqpLib'),
+    'Obinna\\' => array($vendorDir . '/obinna/app/src'),
     'Dotenv\\' => array($vendorDir . '/vlucas/phpdotenv/src'),
 );
