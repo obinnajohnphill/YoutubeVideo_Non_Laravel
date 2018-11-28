@@ -11,22 +11,21 @@ include dirname(__FILE__).'/../../vendor/autoload.php';
 
 use Obinna\Controllers\YoutubeVideosController;
 
-use Obinna\Services\YoutubeVideosService;
+use Obinna\Container\YoutubeVideosContainer;
 
+$container = new YoutubeVideosContainer();
 ## Process selected-to-save videos
-if (!empty($_POST["videoId"]) AND !empty($_POST["title"])){
-    $save = new YoutubeVideosService($_POST["videoId"],$_POST["title"]);
-}
 
+if (!empty($_POST["videoId"]) AND !empty($_POST["title"])){
+    $container->getYoutubeVideosService($_POST["videoId"],$_POST["title"]);
+}
 ## Process selected-to-save videos
 if (!empty($_POST["videoId"]) AND !empty($_POST["delete"])){
-    $delete = new YoutubeVideosService($_POST["videoId"],$_POST["delete"]);
+    $container->getYoutubeVideosService($_POST["videoId"],$_POST["delete"]);
 }
-
 ## Process the search items videos
 if (isset($_POST["searchterm"]) AND isset($_POST["number"]) )
 {
-
     $searchItem =  htmlspecialchars($_POST["searchterm"]);
     $number = htmlspecialchars($_POST["number"]);
 
@@ -38,9 +37,7 @@ if (isset($_POST["searchterm"]) AND isset($_POST["number"]) )
         die();
     }else{
         $passer = new YoutubeVideosController($searchItem, $number);
-
     }
-
 }
 
 
