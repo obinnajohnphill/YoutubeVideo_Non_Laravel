@@ -9,7 +9,6 @@
 
 include dirname(__FILE__).'/../../vendor/autoload.php';
 
-use Obinna\Controllers\YoutubeVideosController;
 
 use Obinna\Container\YoutubeVideosContainer;
 
@@ -36,7 +35,7 @@ if (isset($_POST["searchterm"]) AND isset($_POST["number"]) )
         echo "<h5><a href='/'>Go back</a></h5>";
         die();
     }else{
-        $passer = new YoutubeVideosController($searchItem, $number);
+        $container->getYoutubeVideosController($searchItem, $number);
     }
 }
 
