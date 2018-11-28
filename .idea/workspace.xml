@@ -35,10 +35,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="YoutubeVideosRepository.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="YoutubeVideosRepository.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/Repositories/YoutubeVideosRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="-1840">
               <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="30" />
               <folding>
                 <element signature="e#6#95#0#PHP" expanded="true" />
@@ -93,7 +93,7 @@
       <file leaf-file-name="YoutubeVideosModel.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/YoutubeVideosModel.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="162">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding>
                 <element signature="e#6#95#0#PHP" expanded="true" />
@@ -102,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YoutubeVideosService.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YoutubeVideosService.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/Services/YoutubeVideosService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
+            <state relative-caret-position="731">
               <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
               <folding>
                 <element signature="e#126#158#0#PHP" expanded="true" />
@@ -186,10 +186,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="571" />
-    <option name="y" value="-4" />
-    <option name="width" value="1910" />
-    <option name="height" value="1035" />
+    <option name="x" value="86" />
+    <option name="y" value="419" />
+    <option name="width" value="1912" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -219,17 +219,6 @@
             <path>
               <item name="YoutubeAPI" type="b2602c69:ProjectViewProjectNode" />
               <item name="YoutubeAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YoutubeAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YoutubeAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YoutubeAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YoutubeAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -244,23 +233,6 @@
               <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="obinna" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YoutubeAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YoutubeAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="obinna" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="YoutubeAPI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YoutubeAPI" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="obinna" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Services" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -318,18 +290,17 @@
       <workItem from="1543225534000" duration="3482000" />
       <workItem from="1543236197631" duration="12000" />
       <workItem from="1543236211337" duration="12806000" />
-      <workItem from="1543405021490" duration="2956000" />
+      <workItem from="1543405021490" duration="3541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137626000" />
+    <option name="totallyTimeSpent" value="138211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20437567" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20437567" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5030303" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13553895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -563,6 +534,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/Services/YoutubeVideosService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+          <folding>
+            <element signature="e#126#158#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/YoutubeVideosModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#95#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/process.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="42" />
+          <folding>
+            <element signature="e#155#202#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/views/saved_videos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -570,31 +571,6 @@
           <folding>
             <marker date="1543406583185" expanded="true" signature="879:892" ph="..." />
             <marker date="1543406583185" expanded="true" signature="1011:1020" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/Repositories/YoutubeVideosRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="30" />
-          <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
-            <element signature="e#129#137#0#PHP" expanded="true" />
-            <marker date="1543253243274" expanded="true" signature="1539:1560" ph="SELECT * FRO... videos" />
-            <marker date="1543253243274" expanded="true" signature="2367:2433" ph="INSERT INTO videos... " />
-            <marker date="1543253243274" expanded="true" signature="2971:3021" ph="SELECT * FRO... videos" />
-            <marker date="1543253243274" expanded="true" signature="3797:3844" ph="DELETE FROM " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/YoutubeVideosModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#95#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -610,22 +586,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/views/process.php">
+    <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/Repositories/YoutubeVideosRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="42" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="-1840">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="30" />
           <folding>
-            <element signature="e#155#202#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/obinna/app/src/Services/YoutubeVideosService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="50" column="4" lean-forward="true" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-          <folding>
-            <element signature="e#126#158#0#PHP" expanded="true" />
+            <element signature="e#6#95#0#PHP" expanded="true" />
+            <element signature="e#129#137#0#PHP" expanded="true" />
+            <marker date="1543253243274" expanded="true" signature="1539:1560" ph="SELECT * FRO... videos" />
+            <marker date="1543253243274" expanded="true" signature="2367:2433" ph="INSERT INTO videos... " />
+            <marker date="1543253243274" expanded="true" signature="2971:3021" ph="SELECT * FRO... videos" />
+            <marker date="1543253243274" expanded="true" signature="3797:3844" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
