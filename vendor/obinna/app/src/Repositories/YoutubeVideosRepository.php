@@ -58,7 +58,7 @@ class YoutubeVideosRepository
                 $title[] = $row['title'];
                 $this->data = array("videoId"=>$videoId,"title"=>$title);
             }
-            if ($file != $cached){
+            if (empty($cached)){
                 $this->memcached->set("select", $this->data, 60*60); ## Sets data into cache
             }
             file_put_contents("cache.txt",serialize($this->data));
